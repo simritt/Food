@@ -1,2 +1,2 @@
-# Food
-Front look of a website for a FOOD app (using html, css and js)
+# Restaurant's Website Design
+Frontend of a website for a restaurant named - FOOD (using html, css and js)
