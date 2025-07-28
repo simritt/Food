@@ -1,2 +1,2 @@
 # Food
-Front look of a website for a FOOD app (using html and css)
+Front look of a website for a FOOD app (using html, css and js)
