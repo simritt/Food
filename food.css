@@ -1,0 +1,418 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+/* body{
+    background-color: rgb(230, 223, 29);
+} */
+ body, html {
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;      /* height of navbar */
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    /* position: sticky; */
+    position: fixed;
+    width: 100%;
+    font-family: "Baloo Bhai 2", sans-serif;
+    top: 0;
+    z-index: 5;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(203 103 67);
+    /* position: absolute; */
+    position: fixed;
+    height: 70px;
+    top: 0;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 1rem;
+    line-height: 1;
+}
+#logo img{
+    filter: hue-rotate(130deg) saturate(1.8) brightness(0.8);
+    margin: 0px 10px 0px;
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+span{
+    font-family: "Bitcount", system-ui;
+    text-align: justify;
+    line-height: 1;
+    margin: 0px;
+    color: rgb(221 231 231);
+    font-size: 1.5rem;
+}
+#navbar ul{
+    display: flex;  
+    /* margin: 7px 30px; */
+}
+#navbar ul li{
+    margin: 1px 7px;
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 9px 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-shadow: 1px 2px #218c7b;
+}
+#navbar ul li a:hover{
+    display: block;
+    margin-top: 2px;
+    padding: 3px 7px;
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid #218c7b; */
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: rgb(242 178 60);
+    box-shadow: 3px 3px #218c7b;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    /* padding: (top) (left n right) (bottom) */
+    /* padding: 100px 200px 30px; */
+    padding: 40px 13rem;
+    height: 320px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Playfair", serif;
+    position: relative;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.pexels.com/photos/7248157/pexels-photo-7248157.jpeg') no-repeat center center/cover;
+
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    
+    /* background-size: cover;
+    background-position: center; */
+    
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home h1{
+    /* margin: (top) (left,right) (bottom); */
+    margin: 5rem 0rem 0.3rem;
+    color: #218c7b;
+}
+.h-primary{
+    font-size: 3.9rem;
+    padding: 0.5rem;
+}
+#home p{
+    color: #034604;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.btn{
+    padding: 0.7rem 1.2rem;
+    background-color:#218c7b;
+    color: rgb(211, 237, 242);
+    border: 2px solid rgb(211, 237, 242);
+    border-radius: 7px;
+    margin: 12px;
+    font-size: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.3s;
+} 
+.btn:hover{
+    background-color: #376860;
+}
+
+#menu{
+    /* margin-top: 120px; */
+    margin-top: 3.3rem;
+    /* display: flex; */
+    text-align: center;
+}
+#menu h1{
+    display: block;
+    margin: 1rem auto;
+}
+#categories{
+    /* margin: 6rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#categories .box{
+    border: 2px solid #7a5858;
+    background-color: #e5e0da;
+    margin: 5px;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    width: 22vw;
+    height: 23rem;
+    cursor: pointer;
+}
+#categories .box:hover{
+    scale: 1.03;
+}
+
+#categories .box img{
+    height: 125px;
+    margin-top: 1rem;
+}
+#categories .box h2{
+    font-size: 2.2rem;
+    padding: 0.7rem;
+    margin: 0.6rem 0px;
+}
+#categories .box p{
+    text-align: center;
+}
+
+#online{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 20px; */
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+#online::before{
+    content: "";
+    position: absolute; 
+    background: url('https://images.pexels.com/photos/30892166/pexels-photo-30892166.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+    margin: 4rem auto;
+    height: 100%;
+    width: 100vw;
+}
+#online h1{
+    top: 0;
+    color: white;
+    text-shadow: 3px 3px #218c7b;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 2rem;
+}
+.apps{
+    display: flex;
+    padding: 5px;
+}
+.apps img{
+    margin: 4px;
+    height: 100px;
+    cursor: pointer;
+}
+#me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+#me img{
+    filter: hue-rotate(130deg) saturate(1.8) brightness(0.9);
+    
+}
+#me span{
+    color: white;
+}
+
+#review{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+    /* padding: 3rem 1rem; */
+    color: #6f301f;
+    text-align: center;
+    width: 100vw;
+    padding-bottom: 2rem;
+}
+#review::before{
+    content: "";
+    position: absolute;
+    background: url('https://images.pexels.com/photos/606541/pexels-photo-606541.jpeg');
+    /* background-color: #7a5858; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    background-position: center center;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0;
+    margin-right: 0px;
+    height: 100%;
+    width: 100vw;
+}
+#review h1{
+    padding: 1.2rem;
+}
+#reviewForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* text-align: center; */
+}
+
+#reviewForm input, #reviewForm textarea{
+    padding: 0.7rem;
+    border: 1px solid #6f301f;
+    border-radius: 7px;
+    font-size: 1rem;
+    resize: both;
+    width: 15em;
+}
+#reviewForm textarea{
+    height: 4em;
+    width: 17em;
+}
+#reviewForm button{
+    padding: 0.7rem 1.2rem;
+    background-color:#6f301f;
+    color: wheat;
+    border: 2px solid wheat;
+    border-radius: 7px;
+    margin: 0px auto;
+    font-size: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: background-color 0.3s;
+} 
+#reviewForm button:hover{
+    background-color: #361c1c;
+}
+
+#contact{
+    background-color: rgb(148 203 194);
+    color: white;
+    margin-top: 0.7rem;
+    height: 100%;
+    width: 100vw;
+}
+#contact h1{
+    text-align: center;
+    padding-top: 2rem;
+    color: #218c7b;
+    /* text-shadow: 3px 3px white; */
+    font-size: 4rem;
+}
+#contact .outter{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 3rem 2rem;
+}
+#contact .details {
+    /* flex: 1; */
+    min-width: 250px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    cursor: pointer;
+}
+#contact .social {
+    /* flex: 1; */
+    min-width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding-top: 2rem;
+}
+#contact .social a img {
+    height: 50px; 
+    width: 50px;
+    object-fit: contain;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+#contact .social a img[alt="Youtube"]{
+    height: 50px; 
+    width: 50px;
+    padding: 0.3rem;
+    scale: 2.4 ;
+    object-fit: contain;
+    vertical-align: middle;
+    transition: transform 0.4s;
+}
+#contact .social a img[alt="Facebook"], #contact .social a img[alt="Instagram"]{
+    scale: 1.3;
+}
+#contact .social a img[alt="X"], #contact .social a img[alt="Pinterest"], #contact .social a img[alt="LinkedIn"]
+{
+    scale: 0.8;
+}
+#contact .social a img[alt="X"]{
+    padding-right: 5px;
+    border-radius: 12px;
+}
+
+#contact .social a img:hover {
+    transform: scale(1.1);
+}
+#contact .social a img[alt="X"]:hover {
+    transform: scale(1.3);
+    border-radius: 15px;
+}
+
+
+/* #contact{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#social a img{
+    height: 10px;
+    width: 10px;
+} */
+
+
+.center{
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}

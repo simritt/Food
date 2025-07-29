@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Bitcount:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <!-- <img src="https://bing.com/th/id/BCO.e7cdb07b-5efc-44f5-b34e-5ca29a0509c1.png" alt="Foodilicious"> -->
+            <img src="logo.png" alt="My restaurant">
+            <span>FOOD</span>
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#menu">Menu</a></li>
+            <li class="item"><a href="#online">Order Online</a></li>
+            <li class="item"><a href="#review">Review</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to My restaurant</h1>
+        <p>Welcome to our cozy corner of flavor! We serve freshly prepared meals using quality ingredients to bring you the perfect blend of tradition and taste.</p>
+        <p>From spicy street-style snacks to rich, hearty meals — our menu offers something for every craving. Dine with us and enjoy a warm, delicious experience every time.</p>
+        <!-- <button class="btn">Check Menu</button> -->
+        <button class="btn" onclick="goToMenu()">Check Menu</button>
+    </section>
+
+    <script>
+        function goToMenu(){
+            document.getElementById('menu').scrollIntoView({behavior:"smooth"});
+        }
+    </script>
+
+    <section id="menu">
+        <h1 class="h-primary">Menu</h1>
+        <div id="categories">
+           <div class="box" id="bevrage">
+                <img src="https://images.pexels.com/photos/1028637/pexels-photo-1028637.jpeg" alt="">
+                <h2>Beverages</h2>
+                <p>Quench your thirst with our handpicked selection of beverages. From chilled mocktails, fizzy sodas, and fresh juices to aromatic coffees and herbal teas — refreshment awaits every taste.</p>
+           </div>
+
+           <div class="box" id="starter">
+                <img src="https://images.pexels.com/photos/28525211/pexels-photo-28525211.jpeg" alt="">
+                <h2>Starters</h2>
+                <p>Kickstart your appetite with our delicious starters. Crispy, flavorful bites like tikkas, nachos, cheesy fries, and spicy wings — perfect to share or enjoy all by yourself!</p>
+           </div>
+
+           <div class="box" id="sides">
+                <img src="https://images.pexels.com/photos/3622479/pexels-photo-3622479.jpeg" alt="">
+                <h2>Sides</h2>
+                <p>Our sides are the perfect companions to your meal. Choose from crunchy fries, buttery corn, creamy dips, or seasoned veggies to round out your dining experience.</p>
+           </div>
+
+           <div class="box" id="maincourse">
+                <img src="https://images.pexels.com/photos/29173112/pexels-photo-29173112.jpeg" alt="">
+                <h2>Main Course</h2>
+                <p>Indulge in our satisfying main course options — from rich curries and sizzling sizzlers to gourmet pasta and hearty rice dishes, every plate is packed with bold, comforting flavors.</p>
+           </div>
+
+           <div class="box" id="dessert">
+                <img src="https://images.pexels.com/photos/11867534/pexels-photo-11867534.jpeg" alt="">
+                <h2>Desserts</h2>
+                <p>End on a sweet note with our decadent desserts. Whether it's warm brownies, creamy sundaes, or classic gulab jamuns, each bite promises pure happiness.</p>
+           </div>
+        </div>
+    </section>
+
+    <section id="online">
+        <h1 class="h-primary">Order Online</h1>
+        <div class="apps">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Zomato-Logo.png" alt="Zomato">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Swiggy-Logo.png" alt="Swiggy">
+            <div id="me">
+                <img src="logo.png" alt="FOOD">
+                <span>FOOD</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <h1 class="h-primary">Review</h1>
+        <form id="reviewForm">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Write your review here..." required></textarea>
+            <button type="submit" class="btn">Submit Review</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary">Contact Us</h1>
+        <div class="outter">
+            <div class="details">
+                <div id="num"><strong>Phone: </strong>89202 20202</div>
+                <div id="mail"><strong>Email: </strong>food.connect@gmail.com</div>
+                <div id="address"><strong>Address: </strong>Shop 5, Yellow street road, Mumbai, Maharashtra</div>
+            </div>
+            
+            <div class="social">
+                <a href="http://linkedin.com" target="_blank"><img src="https://sguru.org/wp-content/uploads/2018/02/Logo-LinkedIn-Round.png" alt="LinkedIn"></a>
+                <a href="http://instagram.com" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/04/Instagram-icon-Logo-2016-present.png" alt="Instagram"></a>
+                <a href="http://facebook.com" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook"></a>
+                <a href="http://x.com" target="_blank"><img src="https://admin.itsnicethat.com/images/MEPeS1j8IRTti1OF_E9ajuZSAJw=/243516/width-1440/twitter-x-logo-graphic-design-itsnicethat-01.jpeg" alt="X"></a>
+                <a href="http://youtube.com" target="_blank"><img src="https://www.freeiconspng.com/uploads/youtube-logo-png-photo-0.png" alt="Youtube"></a>
+                <a href="http://pinterest.com" target="_blank"><img src="https://pngimg.com/uploads/pinterest/pinterest_PNG45.png" alt="Pinterest"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; &nbsp;&nbsp; www.myOnlineFOOD.com. &nbsp; &nbsp; All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
+
